@@ -24,6 +24,8 @@ while game_over == False:
   print(f"Compare A: {first_id['name']}, a {first_id['description']},from {first_id['country']}")
   print(art.vs)
   second_no=random.randint(0,len(data)-1)
+  if second_no==first_no:
+    second_no=random.randint(0,len(data)-1)
   second_id=data[second_no] 
   answer=input(f"Compare B: {second_id['name']}, a {second_id['description']},from {second_id['country']}. Type who has more followers: A or B ").lower()
   if answer != 'a' and answer != 'b':
