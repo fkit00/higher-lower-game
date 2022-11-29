@@ -6,10 +6,11 @@ import random
 from game_data import data 
 #okay we have a random number 
 a= random.randint(0,len(data))
+
 # we are printing the art! fabulous but vs will be in the while loop
 print(art.logo)
 print(art.vs)
 print(a)
-
+print(data[a])
 
 game_over= False
